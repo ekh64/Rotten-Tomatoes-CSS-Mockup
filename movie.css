@@ -1,0 +1,109 @@
+body{
+	background-image:url("http://www.cs.rochester.edu/u/jbigham/courses/210/assignments/2/background.png");
+	font-size: 8pt;
+	margin: 0px;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+#banner{
+	background-image:url("http://www.cs.rochester.edu/u/jbigham/courses/210/assignments/2/bannerbackground.png");
+	background-repeat:repeat-x;
+}
+
+h1{
+	text-align:center;
+	font-size: 24pt;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-weight: bold;
+}
+
+#main{
+    overflow:hidden;
+        margin-left:auto;
+        margin-right:auto;
+	width: 800px;
+	border-style:solid;
+	border-width:4px;
+	border-color:gray;
+}
+
+#sidebar{
+    background:#A2B964;
+	float:right;
+	width: 250px;
+}
+
+dl{
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 8pt;
+	font-family: Arial, sans-serif;
+}
+dt{
+	font-weight:bold;
+}
+dd{	
+	margin-bottom: 1em;
+}
+#meter{
+        margin-bottom:-83px;
+	background-image:url("http://www.cs.rochester.edu/u/jbigham/courses/210/assignments/2/rottenbackground.png");
+	background-repeat:repeat-x;
+}
+#metertext{
+	position:relative;
+   	left:100px;
+        bottom:83px;
+	font-size:8pt;
+	color:white;
+}
+#metertext>strong{
+	font-size:48pt;
+	color:red;
+}
+#columnholder{
+	width: 550px;
+        padding-left:1%;
+
+}
+.column{
+	float:left;
+	width:47%;
+        padding:1%;
+}
+.review{
+	font-weight:bold;
+	background:#E1D697;
+	font-size:8pt;
+	border-style:solid;
+	border-color: gray;
+	border-width:2px;
+	padding:8px;
+	overflow:hidden;
+}
+.fr{
+	float:left;
+	padding-right:5px;
+}
+.critic{
+	float:left;
+}
+
+.end{
+	background:#A2B964;
+	text-align:center;
+	width:800px;
+	float:left;
+	padding:5px;
+	margin:0px;
+	
+}
+
+p{
+    padding-bottom:3em;
+}
+#links{
+    position:fixed;
+    right:0px;
+    bottom:0px;
+}
