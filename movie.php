@@ -35,11 +35,11 @@
 		global $rcount;
 		$review[1] = strtolower($review[1]);
 		echo "<p class='review'>
-			<img class='fr' src='http://www.cs.rochester.edu/u/jbigham/courses/210/assignments/2/{$review[1]}.gif' alt='{$review[1]}' />
+			<img class='fr' src='img/{$review[1]}.gif' alt='{$review[1]}' />
 			<q>{$review[0]}</q>
 		</p>
 		<p>
-			<img class='critic' src='http://www.cs.rochester.edu/u/jbigham/courses/210/assignments/2/critic.gif' alt='Critic' />
+			<img class='critic' src='img/critic.gif' alt='Critic' />
 			{$review[2]}<br />
 			{$review[3]}
 		</p>";
@@ -48,18 +48,27 @@
 					<div class='column'>";
 		}
 	}
+
+	function dispIcon($inf){
+		if($inf >= 60){
+			echo "<img src='img/freshbig.png' alt='Fresh'>";
+		}
+		else{
+			echo "<img src='img/rottenbig.png' alt='Rotten'>";
+		}
+	}
 ?>
 	<head>
 		<title><?=$info[0]?> - Rancid Tomatoes</title>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<link rel="SHORTCUT ICON" href="http://www.cs.rochester.edu/u/jbigham/courses/210/assignments/2/rotten.gif" />
+		<link rel="SHORTCUT ICON" href="img/rotten.gif" />
 		<link href="movie.css" type="text/css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<div id="banner">
-			<img src="http://www.cs.rochester.edu/u/jbigham/courses/210/assignments/2/banner.png" alt="Rancid Tomatoes" />
+			<img src="img/banner.png" alt="Rancid Tomatoes" />
 		</div>
 
 		<h1><?echo "$info[0] ($info[1])";?></h1>
@@ -74,7 +83,7 @@
 		</dl>
 	</div>
 		<div id="meter">
-			<img src="http://www.cs.rochester.edu/u/jbigham/courses/210/assignments/2/rottenbig.png" alt="Rotten" />
+			<?dispIcon($info[2])?>
 			<div id="metertext"><strong><?=$info[2]?>%</strong> (<?=$info[3]?> reviews total)</div>
 		</div>
 	<div id="columnholder">
